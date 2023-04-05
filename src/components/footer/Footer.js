@@ -5,6 +5,7 @@ import {FaFacebookF} from "react-icons/fa"
 import { Link } from "react-router-dom";
 import LatestNews from './LatestNews/LatestNews';
 import Information from './Information/Information';
+import Address from './Address/Address';
 
 const Footer = () => {
   return (
@@ -24,15 +25,16 @@ const Footer = () => {
           </div>
         </div>
         <div className={Style.footer_box_LatestNews}>
-          <h3>Latest News</h3>
+          <h3 className={Style.footer_title}>Latest News</h3>
           <LatestNews/>
         </div>
         <div className={Style.footer_box_Information}>
-          <h3>Information</h3>
+          <h3 className={Style.footer_title} >Information</h3>
           <Information/>
         </div>
         <div className={Style.footer_box_Address}>
-          <h3>Have a Questions?</h3>
+          <h3 className={Style.footer_title} >Have a Questions?</h3>
+          <Address/>
         </div>
       </div>
     </div>

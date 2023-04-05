@@ -1,0 +1,39 @@
+.address-home{
+    /* padding: 0px 7%; */
+  }
+  .address-posts {
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+  }
+  .address-post {
+    display: flex;
+    gap: 0;
+  }
+  
+  .address-post:hover{
+    /* color: gray; */
+  }
+    .address-icon {
+      flex: 0.3;
+      position: relative;
+      font-size: 18px;
+      color: white;
+    }
+ 
+      .address-content {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .address-para1 {
+          font-size: 11px;
+          color: rgba(255, 255, 255, 0.7);;
+          text-transform: uppercase;
+          font-size: 16px;
+          text-transform: none;
+          font-weight: 400;
+        }
+  

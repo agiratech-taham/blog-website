@@ -32,8 +32,8 @@
 .footer_social a{
     padding: .5rem;
     color: white;
-    background-color: gray;
-    border: 1px solid gray;
+    background-color: #383f47;
+    /* border: 1px solid gray; */
     border-radius: 50%;
     transition: all .3s ease-in;
     display: grid;
@@ -42,7 +42,13 @@
 color: #ffd369;
 }
 
-
+.footer_title{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-block-end: 0.83em;
+}
 
 
 /* Media Query */

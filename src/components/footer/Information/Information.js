@@ -25,7 +25,7 @@ const info =[
     <div>
         {info.map((el, i)=>(
             <div key={i+1} className={Style.information}>
-            <a href={{pathname: `${el.link}`}}>{el.name}</a>
+            <a className={Style.infoLink} href={{pathname: `${el.link}`}}>{el.name}</a>
             </div>
         ))}
     </div>

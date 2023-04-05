@@ -1,0 +1,16 @@
+.information{
+    margin-top: 20px;
+    padding: 0 1rem;
+    transition: all .3s ease-in;
+    z-index: 222222222;
+}
+
+.infoLink{
+    color: white;
+    text-decoration: none;
+    
+}
+.infoLink:hover{
+    color: #ffd369;
+    cursor: pointer;
+}
