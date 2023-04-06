@@ -9,7 +9,7 @@
   }
   .address-post {
     display: flex;
-    gap: 0;
+    gap: 10px;
   }
   
   .address-post:hover{

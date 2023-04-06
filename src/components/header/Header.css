@@ -29,6 +29,7 @@
   .navbar-bg{
     /* background: #2c2c30; */
     background: #fff !important;  
+    width: 100%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);  
     /* position: sticky; */
     transition: .1s all ease-out;
@@ -152,7 +153,7 @@
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 80px;
+      top: 60px;
       left: -100%;
       /* top: 100%; */
       opacity: 1;
@@ -177,7 +178,7 @@
     }
     .nav-links-scroll {
       text-align: center;
-      background-color: #fff;
+      color: #fff;
       padding: 2rem;
       width: 100%;
       display: table;

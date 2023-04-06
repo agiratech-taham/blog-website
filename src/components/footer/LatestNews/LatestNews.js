@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from "./LatestNews.css"
+import "./LatestNews.css"
 import Img1 from '../../../assets/image_1.jpg.webp';
 import Img2 from '../../../assets/image_2.jpg.webp';
 const LatestNews = () => {
@@ -37,7 +37,7 @@ const getText = (html) => {
             }} src={post.img} alt="" />
               </div>
               <div className="news-content">
-                <h2>{post.title}</h2>
+                <h2 className='newsTitle'>{post.title}</h2>
                 <div style={{display:"block",fontSize: "11px"}}>
                 <p className="news-para1">{getText(post.desc)}</p>
                 <p className="news-para2">{getText(post.desc2)}</p>

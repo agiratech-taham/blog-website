@@ -15,6 +15,8 @@
 .post:hover{
   color: gray;
 }
+
+
   .img {
     flex: 2;
     position: relative;
@@ -67,9 +69,13 @@ ul{
   padding-inline-start: 40px;
 }
 .media-social{
-  opacity: 1;
+  opacity: 0 !important;
   transition: all 0.3s ease;
   /* display:none; */
+}
+
+.post:hover   .media-social{
+  opacity: 1!important;
 }
 
 .list-unstyled {

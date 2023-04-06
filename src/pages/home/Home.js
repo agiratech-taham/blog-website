@@ -8,13 +8,13 @@ import BasicPagination from '../../components/pagination/Pagination'
 
 const Home = () => {
   return (
-    <div>
+    <>
         <Header/>
         <HomeBanner/>
         <BlogLists/>
         <BasicPagination/>
         <Footer/>
-    </div>
+    </>
   )
 }
 

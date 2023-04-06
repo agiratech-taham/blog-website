@@ -11,8 +11,8 @@ const BannerContent = () => {
         // backgroundColor: "primary.da rk",
         position: "absolute",
         top: "150px",
-    left: "50px",
-    paddingLeft: "2.5rem",
+        left: "50px",
+        paddingLeft: "2.5rem",
       }}
     >
         <Grid container spacing={2}>
