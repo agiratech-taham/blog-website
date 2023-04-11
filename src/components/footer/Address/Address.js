@@ -6,14 +6,17 @@ import "./Address.css"
 const Address = () => {
     const address =[
         {
+            id:1,
             info:"	203 Fake St. Mountain View, San Francisco, California, USA",
             icon:<MdLocationOn/>
         },
         {
+            id:2,
             info:"+2 392 3929 210",
             icon:<BsFillTelephoneFill/>
         },
         {
+            id:3,
             info:"info@yourdomain.com",
             icon:<GrMail/>
         }

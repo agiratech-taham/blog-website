@@ -6,7 +6,7 @@ import Footer from '../../components/footer/Footer'
 import HomeBanner from '../../components/homeBanner/HomeBanner'
 import BasicPagination from '../../components/pagination/Pagination'
 
-const Home = () => {
+export const Home = () => {
   return (
     <>
         <Header/>
@@ -17,5 +17,3 @@ const Home = () => {
     </>
   )
 }
-
-export default Home

@@ -6,12 +6,14 @@ const LatestNews = () => {
 // News Item
 const news = [
     {
+        id: 1,
         title: "Even the all-powerful Pointing has no control about",
         desc: "Oct. 16, 2019",
         desc2: "Admin 19",
         img: Img1,
     },
     {
+        id: 2,
         title: "Even the all-powerful Pointing has no control about",
         desc: "Oct. 16, 2019",
         desc2: "Admin 19",

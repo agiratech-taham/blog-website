@@ -1,7 +1,4 @@
-.address-home{
-    /* padding: 0px 7%; */
-  }
-  .address-posts {
+ .address-posts {
     margin-top: 30px;
     display: flex; 
     flex-direction: column;
@@ -12,9 +9,6 @@
     gap: 10px;
   }
   
-  .address-post:hover{
-    /* color: gray; */
-  }
     .address-icon {
       flex: 0.3;
       position: relative;

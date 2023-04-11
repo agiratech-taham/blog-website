@@ -10,7 +10,6 @@ import Img6 from '../../assets/image_6.jpg.webp';
 import Img7 from '../../assets/image_7.jpg.webp';
 import Img8 from '../../assets/image_8.jpg.webp';
 import Img9 from '../../assets/image_9.jpg.webp';
-import Icons from "../icons/Icons";
 import {AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai"
 import {FaFacebookF} from "react-icons/fa"
 

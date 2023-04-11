@@ -1,6 +1,4 @@
-.news-home{
-    /* padding: 0px 7%; */
-  }
+
   .news-posts {
     margin-top: 30px;
     display: flex; 
@@ -12,9 +10,6 @@
     gap: 10px;
   }
   
-  .news-post:hover{
-    /* color: gray; */
-  }
     .news-img {
       flex: 0.3;
       position: relative;
@@ -22,13 +17,7 @@
     .news-img{
         border-radius: 0.25rem !important;
     }
-    img {
-        /* width: 80px;
-          height: 80px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center; */
-      }
+   
       .news-content {
         flex: 3;
         display: flex;

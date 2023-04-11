@@ -1,0 +1,14 @@
+.picture{
+    width: 25px;
+    border-radius: 50%;
+}
+button{
+    background: none;
+    border: none;
+}
+.signBox{
+    display: flex;
+    border: none;
+    background: none;
+    color: black;
+}
