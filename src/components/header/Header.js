@@ -4,7 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 // import { useAuth0 } from "@auth0/auth0-react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.css";
-import Login from "../../components/login/Login"
+import { GoogleLoginComp } from "../GoogleLoginComp";
+import { useAuth } from "../auth";
 const Header = () => {
   const [click, setClick] = useState(false);
   // const { loginWithRedirect, logout, isAuthenticated  } = useAuth0();
@@ -24,6 +25,8 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const {auth} = useAuth()
+
   return (
     <Container fixed>
       <nav className={color ? "navbar navbar-bg" : "navbar"}>
@@ -41,7 +44,7 @@ const Header = () => {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/home"
                 // className={color ? "nav-links-scroll" : "nav-links-scroll"}
                 className={
                   (({ isActive }) =>
@@ -55,7 +58,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/articles"
+                to="/home"
                 className={
                   (({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : ""),
@@ -68,7 +71,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/team"
+                to="/home"
                 className={
                   (({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : ""),
@@ -81,7 +84,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/contact"
+                to="/home"
                 className={
                   (({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : ""),
@@ -94,7 +97,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/profile"
                 className={
                   (({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : ""),
@@ -102,35 +105,27 @@ const Header = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                <Login/>
+               
+                Profile
               </NavLink>
-            </li>
-            {/* {
-              isAuthenticated ?  (<li className="nav-item">
-              <div className={
+              </li>
+                <li>
+              {
+                !auth && (<NavLink
+                to="/login"
+                className={
                   (({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : ""),
                   color ? "nav-links-scroll" : "nav-links")
                 }
-                onClick={closeMobileMenu}>
-                  <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-      Log Out
-    </button>
-              </div>
-            </li> )
-            :
-            (<li className="nav-item">
-            <div className={
-                (({ isActive }) =>
-                  "nav-links" + (isActive ? " activated" : ""),
-                color ? "nav-links-scroll" : "nav-links")
+                onClick={closeMobileMenu}
+              >
+               
+                Login
+              </NavLink>
+              )
               }
-              onClick={closeMobileMenu}>
-          <button onClick={() => loginWithRedirect()}>Log In</button>
-            </div>
-          </li>)
-            } */}
-           
+            </li>
            
           </ul>
         </div>

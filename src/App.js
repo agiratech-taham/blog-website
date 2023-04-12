@@ -1,24 +1,23 @@
-import { Suspense } from 'react';
+import React, {useState} from "react";
 import {  Route, Routes } from "react-router-dom";
 import './App.css';
-// import Router from "../src/RouteLayout/index"
-import loadingGif from './assets/loading.gif';
-import { Articles } from './pages/Articles';
-import { Contact } from './pages/Contact';
-import { Team } from './pages/Team';
+import { AuthProvider } from "./components/auth";
+import { Login } from "./components/Login";
+import { RequireAuth } from "./components/RequireAuth";
 import { Home } from './pages/Home';
+import { Authentication } from "./pages/Profile";
 
 function App() {
   return (
-    <>
+    <AuthProvider>
   <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/articles" element={<Articles/>} />
-          <Route path="/team" element={<Team/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/profile" element={<RequireAuth><Authentication/></RequireAuth> }/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/" element={<RequireAuth><Home/></RequireAuth> } />
+          <Route path="*" element={<div>Page not found</div>}/>
 
     </Routes>
-    </>
+    </AuthProvider>
   );
 }
 
